@@ -133,76 +133,55 @@
   <main id="main-content">
 
     <!-- ==========================================
-         HERO
+         HERO — full-screen background slideshow
          ========================================== -->
     <section class="hero" aria-labelledby="hero-heading">
-      <div class="container">
-        <div class="hero-inner">
 
-          <!-- LEFT: Text -->
-          <div class="hero-content">
+      <!-- Background image slideshow -->
+      <div class="hero-bg-carousel" aria-hidden="true">
+        <div class="hero-bg-slide active" style="background-image:url('https://images.pexels.com/photos/5691660/pexels-photo-5691660.jpeg?auto=compress&cs=tinysrgb&w=1600&fit=crop')"></div>
+        <div class="hero-bg-slide" style="background-image:url('https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=1600&fit=crop')"></div>
+        <div class="hero-bg-slide" style="background-image:url('https://images.pexels.com/photos/8005394/pexels-photo-8005394.jpeg?auto=compress&cs=tinysrgb&w=1600&fit=crop')"></div>
+        <div class="hero-bg-slide" style="background-image:url('https://images.pexels.com/photos/6419128/pexels-photo-6419128.jpeg?auto=compress&cs=tinysrgb&w=1600&fit=crop')"></div>
+      </div>
+      <!-- Dark gradient overlay — heavier on left so text pops -->
+      <div class="hero-overlay" aria-hidden="true"></div>
 
-            <div class="hero-eyebrow">
-              <span class="dot" aria-hidden="true"></span>
-              New Orleans &amp; Surrounding Parishes
-            </div>
+      <div class="container" style="position:relative;z-index:2;">
+        <div class="hero-content">
 
-            <h1 id="hero-heading">
-              30 Years Rewiring<br>
-              <span class="accent">New Orleans.</span><br>
-              We Know Your House.
-            </h1>
-
-            <p class="hero-sub">
-              From knob-and-tube wiring in pre-1950 shotgun doubles to aluminum wiring in Jefferson Parish
-              ranches, Big Easy Electricians brings code-specific expertise to every job. Licensed, insured,
-              and familiar with Orleans and Jefferson Parish permit requirements.
-            </p>
-
-            <div class="hero-actions">
-              <a href="/contact" class="btn-primary btn-lg">
-                Get Free Estimates — No Obligation
-              </a>
-              <a href="tel:+15042267555" class="btn-ghost btn-lg">
-                Call Your Electricians
-              </a>
-            </div>
-
+          <div class="hero-eyebrow">
+            <span class="dot" aria-hidden="true"></span>
+            New Orleans &amp; Surrounding Parishes
           </div>
 
-          <!-- RIGHT: Image Carousel -->
-          <div class="hero-carousel" aria-label="Photo gallery">
-            <div class="carousel-track" id="heroTrack">
-              <div class="carousel-slide">
-                <img src="https://images.pexels.com/photos/2988232/pexels-photo-2988232.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
-                     alt="Big Easy Electricians technician inspecting a residential electrical panel in New Orleans"
-                     loading="eager">
-              </div>
-              <div class="carousel-slide">
-                <img src="https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
-                     alt="Circuit breaker panel upgrade in a New Orleans home"
-                     loading="lazy">
-              </div>
-              <div class="carousel-slide">
-                <img src="https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
-                     alt="Licensed electrician performing electrical maintenance in a New Orleans residence"
-                     loading="lazy">
-              </div>
-              <div class="carousel-slide">
-                <img src="https://images.pexels.com/photos/3862632/pexels-photo-3862632.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
-                     alt="Electrical wiring inspection and repair by Big Easy Electricians"
-                     loading="lazy">
-              </div>
-            </div>
-            <!-- Controls -->
-            <button class="carousel-btn carousel-prev" aria-label="Previous photo">&#8592;</button>
-            <button class="carousel-btn carousel-next" aria-label="Next photo">&#8594;</button>
-            <div class="carousel-dots" id="heroDots" aria-hidden="true">
-              <span class="dot-btn active"></span>
-              <span class="dot-btn"></span>
-              <span class="dot-btn"></span>
-              <span class="dot-btn"></span>
-            </div>
+          <h1 id="hero-heading">
+            30 Years Rewiring<br>
+            <span class="accent">New Orleans.</span><br>
+            We Know Your House.
+          </h1>
+
+          <p class="hero-sub">
+            From knob-and-tube wiring in pre-1950 shotgun doubles to aluminum wiring in Jefferson Parish
+            ranches, Big Easy Electricians brings code-specific expertise to every job. Licensed, insured,
+            and familiar with Orleans and Jefferson Parish permit requirements.
+          </p>
+
+          <div class="hero-actions">
+            <a href="/contact" class="btn-primary btn-lg">
+              Get Free Estimates — No Obligation
+            </a>
+            <a href="tel:+15042267555" class="btn-ghost btn-lg">
+              Call Your Electricians
+            </a>
+          </div>
+
+          <!-- Slideshow dots -->
+          <div class="carousel-dots" id="heroDots" style="position:static;transform:none;justify-content:flex-start;margin-top:32px;" aria-label="Slide indicators">
+            <span class="dot-btn active"></span>
+            <span class="dot-btn"></span>
+            <span class="dot-btn"></span>
+            <span class="dot-btn"></span>
           </div>
 
         </div>
@@ -270,8 +249,8 @@
               that a generic electrician will miss. We've been working inside these walls for three decades.
             </p>
             <div class="diff-image-stack">
-              <img src="https://images.pexels.com/photos/1249611/pexels-photo-1249611.jpeg?auto=compress&cs=tinysrgb&w=600&h=380&fit=crop"
-                   alt="Electrician examining knob-and-tube wiring in the attic of a pre-1950 New Orleans shotgun double"
+              <img src="https://images.pexels.com/photos/5691660/pexels-photo-5691660.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+                   alt="Big Easy Electricians technician examining residential wiring in a New Orleans home"
                    class="diff-img" loading="lazy">
               <div class="diff-img-badge">30+ Years Local Experience</div>
             </div>

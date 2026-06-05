@@ -53,26 +53,23 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ============================================
-  // HERO CAROUSEL
+  // HERO BACKGROUND SLIDESHOW
   // ============================================
-  const track = document.getElementById('heroTrack');
-  const dots  = document.querySelectorAll('#heroDots .dot-btn');
-  const slides = document.querySelectorAll('#heroTrack .carousel-slide');
-  let current = 0, timer;
+  const bgSlides = document.querySelectorAll('.hero-bg-slide');
+  const dots     = document.querySelectorAll('#heroDots .dot-btn');
+  let cur = 0, timer;
 
   function goTo(n) {
-    current = (n + slides.length) % slides.length;
-    track.style.transform = `translateX(-${current * 100}%)`;
-    dots.forEach((d, i) => d.classList.toggle('active', i === current));
+    bgSlides[cur].classList.remove('active');
+    dots[cur]?.classList.remove('active');
+    cur = (n + bgSlides.length) % bgSlides.length;
+    bgSlides[cur].classList.add('active');
+    dots[cur]?.classList.add('active');
   }
 
-  function next() { goTo(current + 1); }
-
-  if (track && slides.length) {
-    document.querySelector('.carousel-next')?.addEventListener('click', () => { clearInterval(timer); next(); timer = setInterval(next, 4500); });
-    document.querySelector('.carousel-prev')?.addEventListener('click', () => { clearInterval(timer); goTo(current - 1); timer = setInterval(next, 4500); });
-    dots.forEach((d, i) => d.addEventListener('click', () => { clearInterval(timer); goTo(i); timer = setInterval(next, 4500); }));
-    timer = setInterval(next, 4500);
+  if (bgSlides.length) {
+    dots.forEach((d, i) => d.addEventListener('click', () => { clearInterval(timer); goTo(i); timer = setInterval(() => goTo(cur + 1), 5000); }));
+    timer = setInterval(() => goTo(cur + 1), 5000);
   }
 
   // ============================================
