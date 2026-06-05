@@ -73,7 +73,7 @@
 
         <!-- Logo -->
         <a href="/" class="nav-logo" aria-label="Big Easy Electricians — Home">
-          <img src="assets/images/logo.png" alt="Big Easy Electricians logo" class="nav-logo-img">
+          <img src="assets/images/logo.png" alt="Big Easy Electricians" class="nav-logo-img" width="140" height="52">
         </a>
 
         <!-- Desktop Menu -->
@@ -136,58 +136,72 @@
          HERO
          ========================================== -->
     <section class="hero" aria-labelledby="hero-heading">
-      <div class="hero-bg" role="img" aria-label="New Orleans electrician working on a residential panel upgrade"></div>
-
       <div class="container">
-        <div class="hero-content">
+        <div class="hero-inner">
 
-          <div class="hero-eyebrow">
-            <span class="dot" aria-hidden="true"></span>
-            New Orleans &amp; Surrounding Parishes
+          <!-- LEFT: Text -->
+          <div class="hero-content">
+
+            <div class="hero-eyebrow">
+              <span class="dot" aria-hidden="true"></span>
+              New Orleans &amp; Surrounding Parishes
+            </div>
+
+            <h1 id="hero-heading">
+              30 Years Rewiring<br>
+              <span class="accent">New Orleans.</span><br>
+              We Know Your House.
+            </h1>
+
+            <p class="hero-sub">
+              From knob-and-tube wiring in pre-1950 shotgun doubles to aluminum wiring in Jefferson Parish
+              ranches, Big Easy Electricians brings code-specific expertise to every job. Licensed, insured,
+              and familiar with Orleans and Jefferson Parish permit requirements.
+            </p>
+
+            <div class="hero-actions">
+              <a href="/contact" class="btn-primary btn-lg">
+                Get Free Estimates — No Obligation
+              </a>
+              <a href="tel:+15042267555" class="btn-ghost btn-lg">
+                Call Your Electricians
+              </a>
+            </div>
+
           </div>
 
-          <h1 id="hero-heading">
-            30 Years Rewiring<br>
-            <span class="accent">New Orleans.</span><br>
-            We Know Your House.
-          </h1>
-
-          <p class="hero-sub">
-            From knob-and-tube wiring in pre-1950 shotgun doubles to aluminum wiring in Jefferson Parish
-            ranches — Big Easy Electricians brings code-specific expertise to every job. Licensed, insured,
-            and familiar with Orleans and Jefferson Parish permit requirements.
-          </p>
-
-          <div class="hero-actions">
-            <a href="/contact" class="btn-primary btn-lg">
-              Get Your Free Estimate →
-            </a>
-            <a href="tel:+15042267555" class="btn-ghost btn-lg">
-              Call 504-226-7555
-            </a>
-          </div>
-
-          <div class="hero-phone-block" aria-label="Phone contact">
-            <!-- Intentionally left blank — phone visible in actions above -->
-          </div>
-
-          <!-- Trust signals row -->
-          <div class="hero-trust" aria-label="Key credentials">
-            <div class="hero-trust-item">
-              <span class="icon" aria-hidden="true">✓</span>
-              30+ Years Experience
+          <!-- RIGHT: Image Carousel -->
+          <div class="hero-carousel" aria-label="Photo gallery">
+            <div class="carousel-track" id="heroTrack">
+              <div class="carousel-slide">
+                <img src="https://images.pexels.com/photos/2988232/pexels-photo-2988232.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+                     alt="Big Easy Electricians technician inspecting a residential electrical panel in New Orleans"
+                     loading="eager">
+              </div>
+              <div class="carousel-slide">
+                <img src="https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+                     alt="Circuit breaker panel upgrade in a New Orleans home"
+                     loading="lazy">
+              </div>
+              <div class="carousel-slide">
+                <img src="https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+                     alt="Licensed electrician performing electrical maintenance in a New Orleans residence"
+                     loading="lazy">
+              </div>
+              <div class="carousel-slide">
+                <img src="https://images.pexels.com/photos/3862632/pexels-photo-3862632.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop"
+                     alt="Electrical wiring inspection and repair by Big Easy Electricians"
+                     loading="lazy">
+              </div>
             </div>
-            <div class="hero-trust-item">
-              <span class="icon" aria-hidden="true">✓</span>
-              Licensed &amp; Insured
-            </div>
-            <div class="hero-trust-item">
-              <span class="icon" aria-hidden="true">✓</span>
-              Free Estimates
-            </div>
-            <div class="hero-trust-item">
-              <span class="icon" aria-hidden="true">✓</span>
-              Residential + Commercial
+            <!-- Controls -->
+            <button class="carousel-btn carousel-prev" aria-label="Previous photo">&#8592;</button>
+            <button class="carousel-btn carousel-next" aria-label="Next photo">&#8594;</button>
+            <div class="carousel-dots" id="heroDots" aria-hidden="true">
+              <span class="dot-btn active"></span>
+              <span class="dot-btn"></span>
+              <span class="dot-btn"></span>
+              <span class="dot-btn"></span>
             </div>
           </div>
 
@@ -255,6 +269,12 @@
               camelback homes, and 1960s Jefferson Parish construction each present specific wiring challenges
               that a generic electrician will miss. We've been working inside these walls for three decades.
             </p>
+            <div class="diff-image-stack">
+              <img src="https://images.pexels.com/photos/1249611/pexels-photo-1249611.jpeg?auto=compress&cs=tinysrgb&w=600&h=380&fit=crop"
+                   alt="Electrician examining knob-and-tube wiring in the attic of a pre-1950 New Orleans shotgun double"
+                   class="diff-img" loading="lazy">
+              <div class="diff-img-badge">30+ Years Local Experience</div>
+            </div>
           </div>
 
           <div class="diff-cards">
@@ -271,11 +291,11 @@
 
             <div class="diff-card warning reveal" role="article">
               <div class="card-icon" aria-hidden="true">⚡</div>
-              <h3>Aluminum Wiring — Jefferson Parish</h3>
+              <h3>Aluminum Wiring in Jefferson Parish</h3>
               <p>
                 1960s-70s construction in Metairie, Kenner, and Harahan typically used single-strand
                 aluminum wiring. Remediation requires CO/ALR devices or COPALUM/AlumiConn pigtailing
-                at every termination — not a generic repair.
+                at every termination. Not a generic repair.
               </p>
             </div>
 

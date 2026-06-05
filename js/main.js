@@ -41,19 +41,38 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ============================================
-  // STICKY HEADER — darken on scroll
+  // STICKY HEADER — white nav, deepen shadow on scroll
   // ============================================
   const header = document.querySelector('.site-header');
   if (header) {
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 40) {
-        header.style.background = 'rgba(10, 22, 40, 0.99)';
-        header.style.boxShadow = '0 2px 24px rgba(0,0,0,0.4)';
-      } else {
-        header.style.background = 'rgba(10, 22, 40, 0.96)';
-        header.style.boxShadow = 'none';
-      }
+      header.style.boxShadow = window.scrollY > 40
+        ? '0 4px 24px rgba(0,0,0,0.14)'
+        : '0 2px 16px rgba(0,0,0,0.08)';
     });
+  }
+
+  // ============================================
+  // HERO CAROUSEL
+  // ============================================
+  const track = document.getElementById('heroTrack');
+  const dots  = document.querySelectorAll('#heroDots .dot-btn');
+  const slides = document.querySelectorAll('#heroTrack .carousel-slide');
+  let current = 0, timer;
+
+  function goTo(n) {
+    current = (n + slides.length) % slides.length;
+    track.style.transform = `translateX(-${current * 100}%)`;
+    dots.forEach((d, i) => d.classList.toggle('active', i === current));
+  }
+
+  function next() { goTo(current + 1); }
+
+  if (track && slides.length) {
+    document.querySelector('.carousel-next')?.addEventListener('click', () => { clearInterval(timer); next(); timer = setInterval(next, 4500); });
+    document.querySelector('.carousel-prev')?.addEventListener('click', () => { clearInterval(timer); goTo(current - 1); timer = setInterval(next, 4500); });
+    dots.forEach((d, i) => d.addEventListener('click', () => { clearInterval(timer); goTo(i); timer = setInterval(next, 4500); }));
+    timer = setInterval(next, 4500);
   }
 
   // ============================================
