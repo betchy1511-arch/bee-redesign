@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electrical Panel Upgrade New Orleans | Big Easy Electricians</title>
+  <meta name="description" content="Panel upgrade specialists serving New Orleans, Metairie, and Jefferson Parish. Licensed electricians replace outdated Federal Pacific, Zinsco, and 100-amp panels. Free estimates: 504-226-7555.">
+
+  <link rel="canonical" href="https://www.bigeasyelectricians.com/services/electrical-panel-upgrade/">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js" defer></script>
+
+  <!-- Shared Design System -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Service Page Styles -->
+  <style>
+
+    /* ---- SERVICE HERO ---- */
+    .svc-hero {
+      position: relative;
+      min-height: 480px;
+      display: flex;
+      align-items: center;
+      background: var(--navy);
+      overflow: hidden;
+      padding: 120px 0 80px;
+    }
+    .svc-hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('../assets/images/elec-panel-hero.jpg');
+      background-size: cover;
+      background-position: center top;
+    }
+    .svc-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(105deg, rgba(10,22,40,0.95) 0%, rgba(10,22,40,0.80) 55%, rgba(10,22,40,0.55) 100%);
+      z-index: 1;
+    }
+    .svc-hero .container {
+      position: relative;
+      z-index: 2;
+      max-width: 760px;
+    }
+    .svc-hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-head);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--yellow);
+      margin-bottom: 16px;
+    }
+    .svc-hero h1 {
+      font-family: var(--font-head);
+      font-size: clamp(38px, 6vw, 62px);
+      font-weight: 700;
+      line-height: 1.05;
+      color: var(--white);
+      margin-bottom: 20px;
+    }
+    .svc-hero h1 span { color: var(--yellow); }
+    .svc-hero-sub {
+      font-size: 18px;
+      line-height: 1.6;
+      color: var(--text-body);
+      max-width: 580px;
+      margin-bottom: 32px;
+    }
+    .svc-hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+    }
+    .svc-hero-trust {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 36px;
+      padding-top: 28px;
+      border-top: 1px solid rgba(255,255,255,0.12);
+    }
+    .svc-hero-trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .svc-hero-trust-item i { color: var(--yellow); font-size: 18px; }
+
+    /* ---- BREADCRUMB ---- */
+    .breadcrumb {
+      background: var(--navy-mid);
+      padding: 12px 0;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .breadcrumb a { color: var(--muted); transition: color 0.15s; }
+    .breadcrumb a:hover { color: var(--yellow); }
+    .breadcrumb-sep { margin: 0 8px; }
+    .breadcrumb span[aria-current] { color: var(--white); }
+
+    /* ---- WARNING CALLOUT (copper) ---- */
+    .warning-callout {
+      background: rgba(196,98,45,0.12);
+      border-left: 4px solid var(--copper);
+      border-radius: var(--radius-sm);
+      padding: 20px 24px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .warning-callout i { color: var(--copper); font-size: 24px; flex-shrink: 0; margin-top: 2px; }
+    .warning-callout p { color: var(--white); font-size: 15px; line-height: 1.6; }
+    .warning-callout strong { color: var(--copper); }
+
+    /* ---- SIGNS SECTION (light bg) ---- */
+    .section-light {
+      background: var(--slate-light);
+      color: var(--navy);
+    }
+    .section-light h2 { color: var(--navy); }
+    .section-light h3 { color: var(--navy); }
+    .section-light p { color: #3a4a60; }
+    .section-light .muted-label { color: #5a6a80; }
+
+    .signs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+    .sign-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      border-left: 4px solid var(--yellow);
+      box-shadow: 0 2px 12px rgba(10,22,40,0.08);
+    }
+    .sign-card-icon {
+      width: 44px;
+      height: 44px;
+      background: rgba(245,197,24,0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 14px;
+    }
+    .sign-card-icon i { color: var(--yellow); font-size: 22px; }
+    .sign-card h3 {
+      font-family: var(--font-head);
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+    .sign-card p { font-size: 14px; line-height: 1.6; color: #3a4a60; }
+
+    /* ---- PANEL BRANDS DANGER TABLE ---- */
+    .panel-danger-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 32px;
+      font-size: 15px;
+    }
+    .panel-danger-table th {
+      background: var(--navy);
+      color: var(--yellow);
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 12px 16px;
+      text-align: left;
+    }
+    .panel-danger-table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid rgba(10,22,40,0.08);
+      color: #3a4a60;
+      vertical-align: top;
+    }
+    .panel-danger-table tr:nth-child(even) td { background: rgba(10,22,40,0.03); }
+    .badge-danger { background: #fde8e0; color: #c4622d; font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 20px; }
+    .badge-warn { background: #fff3cd; color: #856404; font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 20px; }
+
+    /* ---- PROCESS (dark) ---- */
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0;
+      margin-top: 48px;
+      position: relative;
+    }
+    .process-step {
+      padding: 32px 24px;
+      position: relative;
+      text-align: center;
+    }
+    .process-step:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1px;
+      height: 60%;
+      background: rgba(255,255,255,0.1);
+    }
+    .process-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 52px;
+      border: 2px solid var(--yellow);
+      border-radius: 50%;
+      font-family: var(--font-head);
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--yellow);
+      margin: 0 auto 16px;
+    }
+    .process-step h3 {
+      font-family: var(--font-head);
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+    .process-step p { font-size: 14px; color: var(--muted); line-height: 1.6; }
+
+    /* ---- COST ESTIMATE BAND (navy-mid) ---- */
+    .cost-band {
+      background: var(--navy-mid);
+      padding: 56px 0;
+    }
+    .cost-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    .cost-items {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 24px;
+    }
+    .cost-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 18px;
+      background: rgba(255,255,255,0.06);
+      border-radius: var(--radius-sm);
+      border-left: 3px solid var(--yellow);
+    }
+    .cost-item-label { font-size: 15px; color: var(--text-body); }
+    .cost-item-range { font-family: var(--font-head); font-size: 18px; font-weight: 700; color: var(--yellow); }
+    .cost-disclaimer { font-size: 13px; color: var(--muted); margin-top: 16px; font-style: italic; }
+    .cost-cta-box {
+      background: rgba(245,197,24,0.06);
+      border: 1px solid rgba(245,197,24,0.2);
+      border-radius: var(--radius);
+      padding: 36px 32px;
+      text-align: center;
+    }
+    .cost-cta-box h3 {
+      font-family: var(--font-head);
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+    .cost-cta-box p { font-size: 15px; color: var(--muted); margin-bottom: 24px; }
+
+    /* ---- TESTIMONIALS (light) ---- */
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+    .testimonial-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: 0 2px 12px rgba(10,22,40,0.08);
+    }
+    .testimonial-stars { color: #F5A623; font-size: 18px; margin-bottom: 14px; letter-spacing: 2px; }
+    .testimonial-text { font-size: 15px; line-height: 1.7; color: #3a4a60; font-style: italic; margin-bottom: 20px; }
+    .testimonial-author { font-size: 13px; font-weight: 600; color: var(--navy); }
+    .testimonial-location { font-size: 12px; color: #5a6a80; }
+
+    /* ---- FAQ ---- */
+    .faq-list { margin-top: 40px; display: flex; flex-direction: column; gap: 0; }
+    .faq-item { border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      text-align: left;
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      cursor: pointer;
+      font-family: var(--font-head);
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--white);
+    }
+    .faq-question:hover { color: var(--yellow); }
+    .faq-icon { flex-shrink: 0; color: var(--yellow); font-size: 20px; transition: transform 0.2s; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-answer {
+      display: none;
+      padding-bottom: 20px;
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--text-body);
+    }
+    .faq-item.open .faq-answer { display: block; }
+
+    /* ---- BOTTOM CTA BAND ---- */
+    .svc-cta-band {
+      background: var(--yellow);
+      padding: 64px 0;
+      text-align: center;
+    }
+    .svc-cta-band h2 {
+      font-family: var(--font-head);
+      font-size: clamp(28px, 4vw, 44px);
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 12px;
+      line-height: 1.1;
+    }
+    .svc-cta-band p { font-size: 17px; color: rgba(10,22,40,0.75); margin-bottom: 32px; }
+    .svc-cta-band .btn-dark {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--navy);
+      color: var(--white);
+      font-family: var(--font-head);
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 14px 28px;
+      border-radius: var(--radius-sm);
+      transition: background 0.15s, transform 0.15s;
+    }
+    .svc-cta-band .btn-dark:hover { background: #152036; transform: scale(1.02); }
+    .svc-cta-band .btn-phone {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 2px solid var(--navy);
+      color: var(--navy);
+      font-family: var(--font-head);
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 14px 28px;
+      border-radius: var(--radius-sm);
+      transition: background 0.15s;
+    }
+    .svc-cta-band .btn-phone:hover { background: rgba(10,22,40,0.1); }
+    .cta-band-row { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+
+    /* ---- STICKY MOBILE CTA ---- */
+    .sticky-mobile-cta {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 200;
+      background: var(--navy);
+      border-top: 2px solid var(--yellow);
+      padding: 12px 16px;
+      gap: 10px;
+    }
+    .sticky-mobile-cta a {
+      flex: 1;
+      text-align: center;
+      padding: 12px 10px;
+      font-family: var(--font-head);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      border-radius: var(--radius-sm);
+    }
+    .sticky-cta-call { background: var(--yellow); color: var(--navy); }
+    .sticky-cta-form { background: transparent; border: 1px solid var(--yellow); color: var(--yellow); }
+
+    /* ---- RESPONSIVE ---- */
+    @media (max-width: 768px) {
+      .cost-grid { grid-template-columns: 1fr; }
+      .process-step:not(:last-child)::after { display: none; }
+      .sticky-mobile-cta { display: flex; }
+      body { padding-bottom: 70px; }
+      .panel-danger-table { font-size: 13px; }
+      .panel-danger-table th, .panel-danger-table td { padding: 10px 12px; }
+    }
+    @media (max-width: 640px) {
+      .svc-hero { padding: 100px 0 64px; }
+      .signs-grid { grid-template-columns: 1fr; }
+      .testimonial-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <!-- Service Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ElectricalContractor",
+        "@id": "https://www.bigeasyelectricians.com/#business",
+        "name": "Big Easy Electricians",
+        "url": "https://www.bigeasyelectricians.com",
+        "telephone": "504-226-7555",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "New Orleans",
+          "addressRegion": "LA",
+          "addressCountry": "US"
+        }
+      },
+      {
+        "@type": "Service",
+        "name": "Electrical Panel Upgrade",
+        "description": "Licensed panel upgrade service for New Orleans and Jefferson Parish homes. Replacement of outdated Federal Pacific, Zinsco, and undersized 100-amp panels. Includes permit coordination across Orleans and Jefferson Parish.",
+        "provider": { "@id": "https://www.bigeasyelectricians.com/#business" },
+        "areaServed": ["New Orleans, LA", "Metairie, LA", "Kenner, LA", "Jefferson Parish, LA"],
+        "serviceType": "Electrical Panel Upgrade"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much does an electrical panel upgrade cost in New Orleans?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A 200-amp panel upgrade in New Orleans typically runs $1,500 to $3,500, depending on the panel brand, service entrance condition, and whether the work requires a weatherhead replacement. Jefferson Parish permits add approximately $150 to $350 to the total. We provide free written estimates before any work begins."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need a permit for a panel upgrade in New Orleans?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Panel upgrades require an electrical permit through the Orleans Parish Electrical Inspection Office. We handle permit applications as part of every job. Jefferson Parish work goes through the Jefferson Parish Inspection and Code Enforcement division. The permit includes a required inspection sign-off before Entergy restores service."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is a Federal Pacific Stab-Lok panel dangerous?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Federal Pacific Electric Stab-Lok breakers have a documented failure rate — they can fail to trip during an overload, which means the circuit is not protected. CPSC studies and independent fire investigations have linked Stab-Lok panels to residential fires. If you have one, we recommend an evaluation to understand your specific risk. We do not pressure replacements — we explain exactly what the inspection shows."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "My house has a 100-amp panel. Do I need to upgrade?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not always. A 100-amp service was standard for 1960s and 1970s homes and is still adequate for many smaller properties with gas appliances. Where it falls short: EV chargers, heat pumps, induction ranges, and large HVAC systems. We assess your actual load before recommending an upgrade — many homeowners don't need one."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does a panel upgrade take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most residential panel upgrades are completed in one day. The power is off for 4 to 8 hours while we swap the panel, connect the circuits, and coordinate the Entergy reconnect and inspection. Commercial upgrades or service entrance replacements may take longer — we'll give you a specific timeline during the estimate."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Skip to content -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ============================================
+       HEADER / NAV (shared with homepage)
+       ============================================ -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <nav class="nav-wrapper" aria-label="Main navigation">
+
+        <a href="/" class="nav-logo" aria-label="Big Easy Electricians — Home">
+          <img src="../assets/images/logo.png" alt="Big Easy Electricians" class="nav-logo-img" width="140" height="52">
+        </a>
+
+        <ul class="nav-menu" role="list">
+          <li><a href="/about">About</a></li>
+          <li class="nav-item">
+            <a href="/services" aria-haspopup="true">Services ▾</a>
+            <ul class="nav-dropdown" role="list">
+              <li><a href="/services/electrical-installation">Electrical Installation</a></li>
+              <li><a href="/services/electrical-maintenance">Electrical Maintenance</a></li>
+              <li><a href="/services/electrical-repairs">Electrical Repairs</a></li>
+              <li><a href="/services/house-rewiring">House Rewiring</a></li>
+              <li><a href="/services/lightning-strikes">Lightning Strikes</a></li>
+              <li><a href="/services/troubleshooting">Troubleshooting</a></li>
+              <li><a href="/services/panel-upgrade" aria-current="page">Panel Upgrade</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="/service-areas" aria-haspopup="true">Service Areas ▾</a>
+            <ul class="nav-dropdown" role="list">
+              <li><a href="/service-areas/metairie">Metairie</a></li>
+              <li><a href="/service-areas/kenner">Kenner</a></li>
+              <li><a href="/service-areas/gretna">Gretna</a></li>
+              <li><a href="/service-areas/covington">Covington</a></li>
+              <li><a href="/service-areas/mandeville">Mandeville</a></li>
+              <li><a href="/service-areas/slidell">Slidell</a></li>
+              <li><a href="/service-areas/hammond">Hammond</a></li>
+              <li><a href="/service-areas/harahan">Harahan</a></li>
+              <li><a href="/service-areas/river-ridge">River Ridge</a></li>
+              <li><a href="/service-areas/laplace">LaPlace</a></li>
+            </ul>
+          </li>
+          <li><a href="/testimonials">Reviews</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-cta">
+          <a href="tel:+15042267555" class="nav-phone" aria-label="Call Big Easy Electricians">504-226-7555</a>
+          <a href="/contact" class="btn-primary">Free Estimate</a>
+        </div>
+
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================================
+       BREADCRUMB
+       ============================================ -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+      <a href="/">Home</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <a href="/services">Services</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <span aria-current="page">Electrical Panel Upgrade</span>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ============================================
+         SECTION 1: HERO — Hook + problem-aware framing
+         ============================================ -->
+    <section class="svc-hero" aria-label="Electrical Panel Upgrade — New Orleans">
+      <div class="svc-hero-bg" role="img" aria-label="Electrician inspecting electrical panel in New Orleans home"></div>
+      <div class="svc-hero-overlay" aria-hidden="true"></div>
+
+      <div class="container">
+        <p class="svc-hero-eyebrow">
+          <i class="ph ph-lightning" aria-hidden="true"></i>
+          Panel Upgrade Specialists — Orleans &amp; Jefferson Parish
+        </p>
+
+        <h1>Electrical Panel Upgrades<br><span>for New Orleans Homes</span></h1>
+
+        <p class="svc-hero-sub">
+          Your panel is the safety brain of your house. If it's a Federal Pacific Stab-Lok, a Zinsco, or a 30-year-old 100-amp board struggling to power a 2024 home, the risk is real. We replace outdated panels, coordinate the Entergy disconnect, pull the permit, and stay until inspection is signed off.
+        </p>
+
+        <div class="svc-hero-ctas">
+          <a href="/contact" class="btn-primary">
+            Get Free Estimates — No Obligation
+            <i class="ph ph-arrow-right" aria-hidden="true"></i>
+          </a>
+          <a href="tel:+15042267555" class="btn-secondary">
+            <i class="ph ph-phone" aria-hidden="true"></i>
+            Call Your Electricians
+          </a>
+        </div>
+
+        <div class="svc-hero-trust">
+          <div class="svc-hero-trust-item">
+            <i class="ph ph-seal-check" aria-hidden="true"></i>
+            Licensed &amp; Insured (LSLBC)
+          </div>
+          <div class="svc-hero-trust-item">
+            <i class="ph ph-calendar-check" aria-hidden="true"></i>
+            30+ Years in New Orleans
+          </div>
+          <div class="svc-hero-trust-item">
+            <i class="ph ph-file-text" aria-hidden="true"></i>
+            We Pull the Permit
+          </div>
+          <div class="svc-hero-trust-item">
+            <i class="ph ph-star" aria-hidden="true"></i>
+            500+ Verified Reviews
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 2: PROBLEM — Signs you need an upgrade
+         ============================================ -->
+    <section class="section section-light reveal" aria-labelledby="signs-heading">
+      <div class="container">
+        <p class="section-label" style="color: var(--copper);">Recognize the Warning Signs</p>
+        <h2 id="signs-heading">When Your Panel Is the Problem</h2>
+        <p style="max-width: 640px; color: #3a4a60; margin-bottom: 8px;">
+          Most homeowners don't think about their panel until something goes wrong. Here's what to watch for — and what each sign actually means for your home's safety.
+        </p>
+
+        <div class="signs-grid">
+
+          <div class="sign-card reveal">
+            <div class="sign-card-icon"><i class="ph ph-plug-charging" aria-hidden="true"></i></div>
+            <h3>Breakers That Trip Constantly</h3>
+            <p>A breaker tripping once is normal. Tripping repeatedly on the same circuit means the load exceeds what the panel can safely distribute, or the breaker itself is failing and needs to be tested.</p>
+          </div>
+
+          <div class="sign-card reveal">
+            <div class="sign-card-icon"><i class="ph ph-lightning-slash" aria-hidden="true"></i></div>
+            <h3>Federal Pacific or Zinsco Panel</h3>
+            <p>These brands have documented failure rates. Federal Pacific Stab-Lok breakers can fail to trip under overload, leaving your wiring unprotected. If your panel has either name on it, schedule an evaluation.</p>
+          </div>
+
+          <div class="sign-card reveal">
+            <div class="sign-card-icon"><i class="ph ph-battery-low" aria-hidden="true"></i></div>
+            <h3>100-Amp Service with Modern Appliances</h3>
+            <p>A 100-amp panel was designed for 1960s loads. Add a heat pump, EV charger, or induction range and the math doesn't work. We'll calculate your actual load before recommending an upgrade.</p>
+          </div>
+
+          <div class="sign-card reveal">
+            <div class="sign-card-icon"><i class="ph ph-fire-simple" aria-hidden="true"></i></div>
+            <h3>Burning Smell Near the Panel</h3>
+            <p>Burning plastic near an electrical panel is a fire-risk signal. This means a connection is arcing or overheating. Do not ignore it. Call us same day — this is not a "schedule it next week" situation.</p>
+          </div>
+
+          <div class="sign-card reveal">
+            <div class="sign-card-icon"><i class="ph ph-house-line" aria-hidden="true"></i></div>
+            <h3>Insurance Requiring Upgrade</h3>
+            <p>Homeowners insurers in Louisiana have started flagging Federal Pacific and Zinsco panels as uninsurable. We've done dozens of upgrades specifically to satisfy an insurer's remediation letter.</p>
+          </div>
+
+          <div class="sign-card reveal">
+            <div class="sign-card-icon"><i class="ph ph-car-profile" aria-hidden="true"></i></div>
+            <h3>Adding an EV Charger or Solar</h3>
+            <p>A Level 2 EV charger needs a dedicated 240V/50A circuit. Solar interconnection through Entergy requires a modern panel with space for a disconnect. We size the upgrade to accommodate both.</p>
+          </div>
+
+        </div>
+
+        <!-- Danger panel callout -->
+        <div class="warning-callout reveal" style="margin-top: 40px;">
+          <i class="ph ph-warning-circle" aria-hidden="true"></i>
+          <p>
+            <strong>Federal Pacific and Zinsco panels were installed in millions of American homes from the 1950s through the 1980s.</strong> Louisiana's pre-1980 housing stock — especially in Jefferson Parish — has a higher concentration of these panels than the national average. If your home was built before 1985, it's worth a look.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 3: PROOF — Panel brand danger reference
+         ============================================ -->
+    <section class="section reveal" aria-labelledby="brands-heading">
+      <div class="container">
+        <p class="section-label">Know What You Have</p>
+        <h2 id="brands-heading">Panel Brand Risk Reference</h2>
+        <p style="max-width: 600px; color: var(--text-body); margin-bottom: 8px;">
+          Not all panels are equal. This is what our electricians look for when they open your panel door.
+        </p>
+
+        <table class="panel-danger-table" role="table" aria-label="Electrical panel brand risk levels">
+          <thead>
+            <tr>
+              <th scope="col">Panel Brand</th>
+              <th scope="col">Common Era</th>
+              <th scope="col">Risk Level</th>
+              <th scope="col">What We Find</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Federal Pacific (Stab-Lok)</strong></td>
+              <td>1950s – 1980s</td>
+              <td><span class="badge-danger">High</span></td>
+              <td>Breakers that fail to trip on overload; documented fire risk</td>
+            </tr>
+            <tr>
+              <td><strong>Zinsco / GTE-Sylvania</strong></td>
+              <td>1950s – 1970s</td>
+              <td><span class="badge-danger">High</span></td>
+              <td>Breakers that fuse to bus bars; overheat without tripping</td>
+            </tr>
+            <tr>
+              <td><strong>Pushmatic (ITE)</strong></td>
+              <td>1950s – 1980s</td>
+              <td><span class="badge-warn">Moderate</span></td>
+              <td>Breakers wear out; replacements are unavailable for most models</td>
+            </tr>
+            <tr>
+              <td><strong>Split-Bus Panels</strong></td>
+              <td>1950s – 1965</td>
+              <td><span class="badge-warn">Moderate</span></td>
+              <td>No single main disconnect; require 6 breaker throws to kill power</td>
+            </tr>
+            <tr>
+              <td><strong>Square D / Siemens / Eaton</strong></td>
+              <td>1980s – Present</td>
+              <td>Low (if maintained)</td>
+              <td>Standard panels with available replacement breakers; inspect annually</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 4: SOLUTION — Our process
+         ============================================ -->
+    <section class="section reveal" style="background: var(--navy-mid);" aria-labelledby="process-heading">
+      <div class="container">
+        <p class="section-label">How We Do It</p>
+        <h2 id="process-heading">Our Panel Upgrade Process</h2>
+        <p style="max-width: 600px; color: var(--text-body);">
+          No surprises, no subcontractors, no mysterious add-ons. Here's exactly what happens from the moment you call to the moment your power is back on.
+        </p>
+
+        <div class="process-steps">
+          <div class="process-step reveal">
+            <div class="process-num">1</div>
+            <h3>Free On-Site Estimate</h3>
+            <p>We inspect your current panel, measure your service entrance, and calculate your actual load. You get a written quote — materials, labor, permit fee, and Entergy coordination all included.</p>
+          </div>
+          <div class="process-step reveal">
+            <div class="process-num">2</div>
+            <h3>Permit Pulled</h3>
+            <p>We file with Orleans or Jefferson Parish (whichever applies) before we touch anything. The permit is on file with your address before the job starts.</p>
+          </div>
+          <div class="process-step reveal">
+            <div class="process-num">3</div>
+            <h3>Panel Replaced</h3>
+            <p>Entergy disconnects service at the meter. We swap the panel, map every circuit to the new breakers, verify neutral and ground bonds, and test every circuit before restoration.</p>
+          </div>
+          <div class="process-step reveal">
+            <div class="process-num">4</div>
+            <h3>Inspection Sign-Off</h3>
+            <p>The parish inspector comes out. We're on-site for the inspection. After sign-off, Entergy restores service. Most jobs are completed in a single day.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 5: EVIDENCE — Cost + testimonials
+         ============================================ -->
+    <section class="cost-band reveal" aria-labelledby="cost-heading">
+      <div class="container">
+        <div class="cost-grid">
+          <div>
+            <p class="section-label">Real Numbers</p>
+            <h2 id="cost-heading" style="color: var(--white);">What a Panel Upgrade Costs in New Orleans</h2>
+            <p style="color: var(--muted); margin-top: 12px; max-width: 480px;">
+              These are actual ranges from our recent jobs in Orleans and Jefferson Parish. Every home is different — your written estimate will break out every line item.
+            </p>
+            <div class="cost-items">
+              <div class="cost-item">
+                <span class="cost-item-label">200-Amp Panel Replacement (standard)</span>
+                <span class="cost-item-range">$1,500 – $2,800</span>
+              </div>
+              <div class="cost-item">
+                <span class="cost-item-label">200-Amp with Service Entrance Upgrade</span>
+                <span class="cost-item-range">$2,400 – $4,200</span>
+              </div>
+              <div class="cost-item">
+                <span class="cost-item-label">400-Amp (large home / EV + solar)</span>
+                <span class="cost-item-range">$3,800 – $6,500</span>
+              </div>
+              <div class="cost-item">
+                <span class="cost-item-label">Orleans Parish Permit (typical)</span>
+                <span class="cost-item-range">$150 – $275</span>
+              </div>
+              <div class="cost-item">
+                <span class="cost-item-label">Jefferson Parish Permit (typical)</span>
+                <span class="cost-item-range">$175 – $350</span>
+              </div>
+            </div>
+            <p class="cost-disclaimer">Ranges reflect 2024 jobs. Final price depends on panel brand, service entrance condition, and whether weatherhead or meter base replacement is needed.</p>
+          </div>
+
+          <div class="cost-cta-box">
+            <h3>Get Your Exact Number Before Committing</h3>
+            <p>Free written estimates. No obligation. We'll come out, evaluate your panel and service entrance, and give you a complete price — not a range.</p>
+            <a href="tel:+15042267555" class="btn-primary" style="display: inline-flex; gap: 8px; align-items: center;">
+              <i class="ph ph-phone" aria-hidden="true"></i>
+              Call 504-226-7555
+            </a>
+            <p style="margin-top: 16px; font-size: 13px; color: var(--muted);">Mon – Fri, 9am – 6pm</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section-light reveal" aria-labelledby="reviews-heading">
+      <div class="container">
+        <p class="section-label" style="color: var(--copper);">What Customers Say</p>
+        <h2 id="reviews-heading">Panel Upgrade Reviews</h2>
+        <p style="color: #3a4a60; max-width: 560px;">From Uptown New Orleans to Metairie — what homeowners said after their panel upgrades.</p>
+
+        <div class="testimonial-grid">
+
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-text">"We had a Federal Pacific panel and our homeowners insurance gave us 60 days to replace it. Big Easy came out the next day, gave us a written quote, and had the job done in one day. The inspector signed off same afternoon. Really professional operation."</p>
+            <p class="testimonial-author">Marcus T.</p>
+            <p class="testimonial-location">Lakeview, New Orleans</p>
+          </div>
+
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-text">"Our 1960s Metairie ranch had the original 100-amp panel. They walked us through the actual load calculation, explained why we needed 200 amps but NOT 400 (saved us $2,000 vs the competitor's quote), and handled the Jefferson Parish permit. Honest people."</p>
+            <p class="testimonial-author">Sandra B.</p>
+            <p class="testimonial-location">Metairie, Jefferson Parish</p>
+          </div>
+
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-text">"Called them for a burning smell near the breaker box. They came out same day, identified a loose neutral on a double-tap breaker, and showed me exactly what caused the heat. Fixed on the spot. These are the electricians you want when you smell smoke."</p>
+            <p class="testimonial-author">Derek A.</p>
+            <p class="testimonial-location">Mid-City, New Orleans</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 6: FAQ
+         ============================================ -->
+    <section class="section reveal" aria-labelledby="faq-heading">
+      <div class="container" style="max-width: 800px;">
+        <p class="section-label">Common Questions</p>
+        <h2 id="faq-heading">Panel Upgrade FAQ</h2>
+
+        <div class="faq-list" role="list">
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false">
+              How much does an electrical panel upgrade cost in New Orleans?
+              <i class="ph ph-plus faq-icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer" id="faq-a1">
+              A 200-amp panel upgrade in New Orleans typically runs $1,500 to $3,500, depending on the panel brand, service entrance condition, and whether the work requires a weatherhead replacement. Jefferson Parish permits add approximately $150 to $350 to the total. We provide free written estimates before any work begins.
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false">
+              Do I need a permit for a panel upgrade in New Orleans?
+              <i class="ph ph-plus faq-icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer" id="faq-a2">
+              Yes. Panel upgrades require an electrical permit through the Orleans Parish Electrical Inspection Office. We handle permit applications as part of every job. Jefferson Parish work goes through the Jefferson Parish Inspection and Code Enforcement division. The permit includes a required inspection sign-off before Entergy restores service.
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false">
+              Is a Federal Pacific Stab-Lok panel dangerous?
+              <i class="ph ph-plus faq-icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer" id="faq-a3">
+              Federal Pacific Electric Stab-Lok breakers have a documented failure rate — they can fail to trip during an overload, which means the circuit is not protected. CPSC studies and independent fire investigations have linked Stab-Lok panels to residential fires. If you have one, we recommend an evaluation. We do not pressure replacements — we explain exactly what the inspection shows.
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false">
+              My house has a 100-amp panel. Do I need to upgrade?
+              <i class="ph ph-plus faq-icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer" id="faq-a4">
+              Not always. A 100-amp service was standard for 1960s and 1970s homes and is still adequate for many smaller properties with gas appliances. Where it falls short: EV chargers, heat pumps, induction ranges, and large HVAC systems. We assess your actual load before recommending an upgrade — many homeowners don't need one.
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false">
+              How long does a panel upgrade take?
+              <i class="ph ph-plus faq-icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer" id="faq-a5">
+              Most residential panel upgrades are completed in one day. The power is off for 4 to 8 hours while we swap the panel, connect the circuits, and coordinate the Entergy reconnect and inspection. Commercial upgrades or service entrance replacements may take longer — we'll give you a specific timeline during the estimate.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         BOTTOM CTA BAND
+         ============================================ -->
+    <section class="svc-cta-band" aria-label="Contact Big Easy Electricians">
+      <div class="container">
+        <h2>Ready to Replace That Panel?</h2>
+        <p>Free written estimate. We pull the permit. We stay for inspection. Orleans and Jefferson Parish.</p>
+        <div class="cta-band-row">
+          <a href="/contact" class="btn-dark">
+            Get Free Estimates — No Obligation
+            <i class="ph ph-arrow-right" aria-hidden="true"></i>
+          </a>
+          <a href="tel:+15042267555" class="btn-phone">
+            <i class="ph ph-phone" aria-hidden="true"></i>
+            Call 504-226-7555
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================
+       FOOTER (shared)
+       ============================================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-col footer-brand">
+          <img src="../assets/images/logo.png" alt="Big Easy Electricians" class="footer-logo" width="140" height="52">
+          <p class="footer-tagline">30 years rewiring New Orleans — from knob-and-tube shotgun doubles to commercial panel upgrades.</p>
+          <a href="tel:+15042267555" class="footer-phone">504-226-7555</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="/services/electrical-installation">Electrical Installation</a></li>
+            <li><a href="/services/electrical-maintenance">Electrical Maintenance</a></li>
+            <li><a href="/services/electrical-repairs">Electrical Repairs</a></li>
+            <li><a href="/services/house-rewiring">House Rewiring</a></li>
+            <li><a href="/services/panel-upgrade">Panel Upgrade</a></li>
+            <li><a href="/services/lightning-strikes">Lightning Strike Damage</a></li>
+            <li><a href="/services/troubleshooting">Troubleshooting</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Service Areas</h4>
+          <ul>
+            <li><a href="/service-areas/new-orleans">New Orleans</a></li>
+            <li><a href="/service-areas/metairie">Metairie</a></li>
+            <li><a href="/service-areas/kenner">Kenner</a></li>
+            <li><a href="/service-areas/gretna">Gretna</a></li>
+            <li><a href="/service-areas/covington">Covington</a></li>
+            <li><a href="/service-areas/mandeville">Mandeville</a></li>
+            <li><a href="/service-areas/slidell">Slidell</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <address style="font-style: normal;">
+            <p>New Orleans, Louisiana</p>
+            <p>Serving Orleans, Jefferson,<br>St. Tammany &amp; Tangipahoa Parishes</p>
+            <a href="tel:+15042267555" class="footer-phone" style="margin-top: 12px; display: block;">504-226-7555</a>
+            <p style="margin-top: 8px; color: var(--muted); font-size: 14px;">Mon – Fri, 9:00 AM – 6:00 PM</p>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="footer-year">2024</span> Big Easy Electricians. All rights reserved. Licensed Electrical Contractor — LSLBC.</p>
+        <nav aria-label="Footer links">
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/sitemap.xml">Sitemap</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky Mobile CTA -->
+  <div class="sticky-mobile-cta" role="navigation" aria-label="Quick contact">
+    <a href="tel:+15042267555" class="sticky-cta-call">
+      <i class="ph ph-phone" aria-hidden="true"></i> Call Now
+    </a>
+    <a href="/contact" class="sticky-cta-form">
+      Free Estimate
+    </a>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../js/main.js"></script>
+  <script>
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => {
+          i.classList.remove('open');
+          i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    // Footer year
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electrician Metairie, LA | Big Easy Electricians</title>
+  <meta name="description" content="Licensed electrician serving Metairie, Louisiana. Specialists in aluminum wiring remediation for Jefferson Parish's 1960s-70s housing stock. Panel upgrades, rewiring, and code compliance. Free estimates: 504-226-7555.">
+
+  <link rel="canonical" href="https://www.bigeasyelectricians.com/service-areas/metairie/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1/src/index.js" defer></script>
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    /* ---- SERVICE AREA HERO ---- */
+    .sa-hero {
+      position: relative;
+      min-height: 420px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      padding: 120px 0 72px;
+    }
+    .sa-hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('../assets/images/elec-conduit-work.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .sa-hero-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(105deg, rgba(10,22,40,0.95) 0%, rgba(10,22,40,0.82) 60%, rgba(10,22,40,0.5) 100%);
+    }
+    .sa-hero .container { position: relative; z-index: 2; max-width: 720px; }
+    .sa-hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--font-head);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--yellow);
+      margin-bottom: 16px;
+    }
+    .sa-hero h1 {
+      font-family: var(--font-head);
+      font-size: clamp(36px, 5.5vw, 58px);
+      font-weight: 700;
+      line-height: 1.05;
+      color: var(--white);
+      margin-bottom: 18px;
+    }
+    .sa-hero h1 span { color: var(--yellow); }
+    .sa-hero-sub {
+      font-size: 17px;
+      line-height: 1.65;
+      color: var(--text-body);
+      max-width: 560px;
+      margin-bottom: 30px;
+    }
+    .sa-hero-ctas { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+
+    /* ---- BREADCRUMB ---- */
+    .breadcrumb {
+      background: var(--navy-mid);
+      padding: 12px 0;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .breadcrumb a { color: var(--muted); transition: color 0.15s; }
+    .breadcrumb a:hover { color: var(--yellow); }
+    .breadcrumb-sep { margin: 0 8px; }
+
+    /* ---- LOCAL INTEL SECTION (light) ---- */
+    .section-light { background: var(--slate-light); color: var(--navy); }
+    .section-light h2 { color: var(--navy); }
+    .section-light p { color: #3a4a60; }
+
+    .local-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+      margin-top: 40px;
+    }
+
+    /* ---- WARNING CALLOUT ---- */
+    .warning-callout {
+      background: rgba(196,98,45,0.12);
+      border-left: 4px solid var(--copper);
+      border-radius: 4px;
+      padding: 20px 24px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      margin-top: 24px;
+    }
+    .warning-callout i { color: var(--copper); font-size: 24px; flex-shrink: 0; margin-top: 2px; }
+    .warning-callout p { color: var(--white); font-size: 15px; line-height: 1.6; margin: 0; }
+    .warning-callout strong { color: var(--copper); }
+
+    .warning-callout.light {
+      background: rgba(196,98,45,0.08);
+    }
+    .warning-callout.light p { color: #3a4a60; }
+
+    /* ---- SERVICE CARDS GRID ---- */
+    .sa-services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+    /* uses .service-card from shared CSS */
+
+    /* ---- QUICK FACTS ---- */
+    .quick-facts {
+      background: var(--navy-mid);
+      border-radius: 8px;
+      padding: 28px 32px;
+    }
+    .quick-facts h3 {
+      font-family: var(--font-head);
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--yellow);
+      margin-bottom: 18px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .fact-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      font-size: 14px;
+      gap: 16px;
+    }
+    .fact-row:last-child { border-bottom: none; }
+    .fact-label { color: var(--muted); flex-shrink: 0; width: 44%; }
+    .fact-value { color: var(--white); text-align: right; }
+
+    /* ---- TESTIMONIALS ---- */
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+    .testimonial-card {
+      background: var(--white);
+      border-radius: 6px;
+      padding: 28px;
+      box-shadow: 0 2px 12px rgba(10,22,40,0.08);
+    }
+    .testimonial-stars { color: #F5A623; font-size: 18px; margin-bottom: 12px; letter-spacing: 2px; }
+    .testimonial-text { font-size: 15px; line-height: 1.7; color: #3a4a60; font-style: italic; margin-bottom: 16px; }
+    .testimonial-author { font-size: 13px; font-weight: 600; color: var(--navy); }
+    .testimonial-location { font-size: 12px; color: #5a6a80; }
+
+    /* ---- NEARBY AREAS ---- */
+    .nearby-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+    }
+    .nearby-chip {
+      background: var(--navy-mid);
+      color: var(--text-body);
+      font-size: 13px;
+      padding: 8px 16px;
+      border-radius: 20px;
+      transition: background 0.15s, color 0.15s;
+    }
+    .nearby-chip:hover { background: var(--yellow); color: var(--navy); }
+
+    /* ---- FAQ ---- */
+    .faq-list { margin-top: 40px; }
+    .faq-item { border-bottom: 1px solid rgba(255,255,255,0.1); }
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      text-align: left;
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      cursor: pointer;
+      font-family: var(--font-head);
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--white);
+    }
+    .faq-question:hover { color: var(--yellow); }
+    .faq-icon { flex-shrink: 0; color: var(--yellow); font-size: 20px; transition: transform 0.2s; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-answer {
+      display: none;
+      padding-bottom: 20px;
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--text-body);
+    }
+    .faq-item.open .faq-answer { display: block; }
+
+    /* ---- CTA BAND ---- */
+    .svc-cta-band { background: var(--yellow); padding: 64px 0; text-align: center; }
+    .svc-cta-band h2 {
+      font-family: var(--font-head);
+      font-size: clamp(26px, 4vw, 42px);
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 12px;
+      line-height: 1.1;
+    }
+    .svc-cta-band p { font-size: 17px; color: rgba(10,22,40,0.75); margin-bottom: 32px; }
+    .cta-band-row { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+    .btn-dark {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--navy); color: var(--white);
+      font-family: var(--font-head); font-size: 16px; font-weight: 600;
+      letter-spacing: 0.05em; text-transform: uppercase;
+      padding: 14px 28px; border-radius: 4px;
+      transition: background 0.15s, transform 0.15s;
+    }
+    .btn-dark:hover { background: #152036; transform: scale(1.02); }
+    .btn-phone {
+      display: inline-flex; align-items: center; gap: 8px;
+      border: 2px solid var(--navy); color: var(--navy);
+      font-family: var(--font-head); font-size: 16px; font-weight: 600;
+      letter-spacing: 0.05em; text-transform: uppercase;
+      padding: 14px 28px; border-radius: 4px; transition: background 0.15s;
+    }
+    .btn-phone:hover { background: rgba(10,22,40,0.1); }
+
+    /* ---- STICKY MOBILE CTA ---- */
+    .sticky-mobile-cta {
+      display: none;
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 200;
+      background: var(--navy); border-top: 2px solid var(--yellow);
+      padding: 12px 16px; gap: 10px;
+    }
+    .sticky-mobile-cta a {
+      flex: 1; text-align: center; padding: 12px 10px;
+      font-family: var(--font-head); font-size: 14px; font-weight: 700;
+      letter-spacing: 0.05em; text-transform: uppercase; border-radius: 4px;
+    }
+    .sticky-cta-call { background: var(--yellow); color: var(--navy); }
+    .sticky-cta-form { background: transparent; border: 1px solid var(--yellow); color: var(--yellow); }
+
+    @media (max-width: 768px) {
+      .local-grid { grid-template-columns: 1fr; }
+      .sticky-mobile-cta { display: flex; }
+      body { padding-bottom: 70px; }
+    }
+    @media (max-width: 640px) {
+      .sa-hero { padding: 100px 0 56px; }
+      .testimonial-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <!-- Local Business + Service Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ElectricalContractor",
+        "@id": "https://www.bigeasyelectricians.com/#business",
+        "name": "Big Easy Electricians",
+        "url": "https://www.bigeasyelectricians.com",
+        "telephone": "504-226-7555",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "New Orleans",
+          "addressRegion": "LA",
+          "addressCountry": "US"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Metairie",
+          "sameAs": "https://en.wikipedia.org/wiki/Metairie,_Louisiana"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do you service Metairie, Louisiana?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. We serve all of Metairie and Jefferson Parish, including Old Metairie, Fat City, and neighborhoods along Veterans Memorial Boulevard and Causeway Boulevard. We pull Jefferson Parish permits for every job that requires one."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "My Metairie home was built in the 1960s — do I have aluminum wiring?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Possibly. Aluminum branch circuit wiring was common in Jefferson Parish residential construction from roughly 1965 to 1973, when copper prices spiked. If your home was built in that window, an evaluation is worth scheduling. We look at the wire color at the panel and at outlets to identify it definitively."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What permits does Big Easy Electricians pull in Jefferson Parish?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We file electrical permits through Jefferson Parish Inspection and Code Enforcement for all work that requires one — panel upgrades, service entrance changes, new circuits, and house rewiring. We handle the paperwork and coordinate the inspection sign-off before closing out the job."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- NAV -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <nav class="nav-wrapper" aria-label="Main navigation">
+        <a href="/" class="nav-logo" aria-label="Big Easy Electricians — Home">
+          <img src="../assets/images/logo.png" alt="Big Easy Electricians" class="nav-logo-img" width="140" height="52">
+        </a>
+        <ul class="nav-menu" role="list">
+          <li><a href="/about">About</a></li>
+          <li class="nav-item">
+            <a href="/services" aria-haspopup="true">Services ▾</a>
+            <ul class="nav-dropdown" role="list">
+              <li><a href="/services/electrical-installation">Electrical Installation</a></li>
+              <li><a href="/services/electrical-maintenance">Electrical Maintenance</a></li>
+              <li><a href="/services/electrical-repairs">Electrical Repairs</a></li>
+              <li><a href="/services/house-rewiring">House Rewiring</a></li>
+              <li><a href="/services/panel-upgrade">Panel Upgrade</a></li>
+              <li><a href="/services/lightning-strikes">Lightning Strikes</a></li>
+              <li><a href="/services/troubleshooting">Troubleshooting</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="/service-areas" aria-haspopup="true">Service Areas ▾</a>
+            <ul class="nav-dropdown" role="list">
+              <li><a href="/service-areas/metairie" aria-current="page">Metairie</a></li>
+              <li><a href="/service-areas/kenner">Kenner</a></li>
+              <li><a href="/service-areas/gretna">Gretna</a></li>
+              <li><a href="/service-areas/covington">Covington</a></li>
+              <li><a href="/service-areas/mandeville">Mandeville</a></li>
+              <li><a href="/service-areas/slidell">Slidell</a></li>
+              <li><a href="/service-areas/hammond">Hammond</a></li>
+              <li><a href="/service-areas/harahan">Harahan</a></li>
+              <li><a href="/service-areas/river-ridge">River Ridge</a></li>
+              <li><a href="/service-areas/laplace">LaPlace</a></li>
+            </ul>
+          </li>
+          <li><a href="/testimonials">Reviews</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="tel:+15042267555" class="nav-phone">504-226-7555</a>
+          <a href="/contact" class="btn-primary">Free Estimate</a>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- BREADCRUMB -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+      <a href="/">Home</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <a href="/service-areas">Service Areas</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <span aria-current="page">Metairie, LA</span>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="sa-hero" aria-label="Electrician in Metairie, Louisiana">
+      <div class="sa-hero-bg" role="img" aria-label="Electrician working on conduit wiring in Jefferson Parish building"></div>
+      <div class="sa-hero-overlay" aria-hidden="true"></div>
+      <div class="container">
+        <p class="sa-hero-eyebrow">
+          <i class="ph ph-map-pin" aria-hidden="true"></i>
+          Jefferson Parish — Serving Metairie Since 1994
+        </p>
+        <h1>Licensed Electrician<br><span>Metairie, Louisiana</span></h1>
+        <p class="sa-hero-sub">
+          Most of Metairie's housing was built between 1950 and 1975. That era brought concrete slab construction, aluminum branch circuit wiring, and 100-amp panels that were never designed for today's loads. We've been working Jefferson Parish jobs for 30 years and pull permits through Jefferson Parish Inspection and Code Enforcement on every job that requires one.
+        </p>
+        <div class="sa-hero-ctas">
+          <a href="/contact" class="btn-primary">
+            Get Free Estimates — No Obligation
+            <i class="ph ph-arrow-right" aria-hidden="true"></i>
+          </a>
+          <a href="tel:+15042267555" class="btn-secondary">
+            <i class="ph ph-phone" aria-hidden="true"></i>
+            Call Your Electricians
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: LOCAL INTEL -->
+    <section class="section section-light reveal" aria-labelledby="local-heading">
+      <div class="container">
+        <p class="section-label" style="color: var(--copper);">What We Know About Metairie</p>
+        <h2 id="local-heading">Jefferson Parish Housing — What Your Home Is Likely Carrying</h2>
+
+        <div class="local-grid">
+          <div>
+            <p>Metairie's housing stock is concentrated in two eras:</p>
+            <ul style="margin: 16px 0 0 20px; color: #3a4a60; line-height: 2; list-style: disc;">
+              <li><strong>Pre-1960:</strong> Older neighborhoods near Old Metairie and Veterans Boulevard — some knob-and-tube, often with service upgrades that were done cheaply</li>
+              <li><strong>1960s – 1975:</strong> The bulk of Jefferson Parish's residential construction — slab foundations, aluminum branch circuit wiring in most homes, 100-amp Federal Pacific or Zinsco panels</li>
+              <li><strong>Post-1985:</strong> Copper wiring standard, more modern panels — fewer concerns unless there was DIY work done between then and now</li>
+            </ul>
+
+            <p style="margin-top: 20px; color: #3a4a60;">The aluminum wiring issue is specific to Metairie and the surrounding Jefferson Parish communities. Aluminum was used as a cost-cutting measure during the copper shortage of the late 1960s. It expands and contracts differently than copper, which loosens connections over time. The remedy is not a rewire — it's CO/ALR outlet replacement or COPALUM/AlumiConn pigtailing at every device.</p>
+
+            <div class="warning-callout light reveal">
+              <i class="ph ph-warning-circle" aria-hidden="true"></i>
+              <p>If your Metairie home was built between 1965 and 1973, there is a meaningful chance it has aluminum branch circuit wiring. We evaluate it for free as part of any service call. <strong>Warm outlets, flickering lights, or breakers that trip for no apparent reason</strong> are signals worth following up on.</p>
+            </div>
+          </div>
+
+          <div>
+            <div class="quick-facts">
+              <h3>Metairie Service Profile</h3>
+              <div class="fact-row">
+                <span class="fact-label">Common Wiring Era</span>
+                <span class="fact-value">1960s – 1975 aluminum; pre-1960 knob-and-tube in older sections</span>
+              </div>
+              <div class="fact-row">
+                <span class="fact-label">Most Common Panel Found</span>
+                <span class="fact-value">Federal Pacific Stab-Lok (100A), Zinsco, some Square D</span>
+              </div>
+              <div class="fact-row">
+                <span class="fact-label">Permit Authority</span>
+                <span class="fact-value">Jefferson Parish Inspection and Code Enforcement</span>
+              </div>
+              <div class="fact-row">
+                <span class="fact-label">Utility</span>
+                <span class="fact-value">Entergy Louisiana</span>
+              </div>
+              <div class="fact-row">
+                <span class="fact-label">Common Jobs We Do Here</span>
+                <span class="fact-value">Aluminum wiring remediation, panel replacement, 200A upgrades, GFCI/AFCI compliance</span>
+              </div>
+              <div class="fact-row">
+                <span class="fact-label">Neighborhoods We Service</span>
+                <span class="fact-value">Old Metairie, Fat City, East Metairie, West Metairie, Bucktown</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: SERVICES IN THIS AREA -->
+    <section class="section reveal" aria-labelledby="services-heading">
+      <div class="container">
+        <p class="section-label">What We Do in Metairie</p>
+        <h2 id="services-heading">Electrical Services for Jefferson Parish Homes</h2>
+        <p style="color: var(--text-body); max-width: 580px;">Every job listed here has been performed in Metairie and surrounding Jefferson Parish communities. We pull the permit, schedule the inspection, and stay on-site until sign-off.</p>
+
+        <div class="sa-services-grid">
+
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <i class="ph ph-plugs-connected" aria-hidden="true"></i>
+            </div>
+            <h3>Aluminum Wiring Remediation</h3>
+            <p>CO/ALR outlet replacement and COPALUM/AlumiConn pigtailing for 1960s-70s Jefferson Parish construction. The correct fix — not a temporary patch.</p>
+            <a href="/services/aluminum-wiring" class="service-link">
+              Learn More <i class="ph ph-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <i class="ph ph-lightning" aria-hidden="true"></i>
+            </div>
+            <h3>Panel Upgrade</h3>
+            <p>Replace your Federal Pacific, Zinsco, or undersized 100-amp panel. We coordinate the Jefferson Parish permit and Entergy disconnect on your schedule.</p>
+            <a href="/services/panel-upgrade" class="service-link">
+              Learn More <i class="ph ph-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <i class="ph ph-house-simple" aria-hidden="true"></i>
+            </div>
+            <h3>House Rewiring</h3>
+            <p>Full rewires for older Metairie homes where aluminum wiring or aged knob-and-tube has reached end of life. Phased approaches available to minimize disruption.</p>
+            <a href="/services/house-rewiring" class="service-link">
+              Learn More <i class="ph ph-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <i class="ph ph-wrench" aria-hidden="true"></i>
+            </div>
+            <h3>Electrical Repairs</h3>
+            <p>Flickering lights, dead outlets, tripping breakers. We diagnose before we quote — no parts replaced that don't need replacing.</p>
+            <a href="/services/electrical-repairs" class="service-link">
+              Learn More <i class="ph ph-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <i class="ph ph-file-text" aria-hidden="true"></i>
+            </div>
+            <h3>Code Compliance</h3>
+            <p>NEC 210.8 GFCI and 210.12 AFCI requirements for Jefferson Parish renovation permits. We bring older homes up to current code on the scope you actually need.</p>
+            <a href="/services/electrical-installation" class="service-link">
+              Learn More <i class="ph ph-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <i class="ph ph-buildings" aria-hidden="true"></i>
+            </div>
+            <h3>Commercial Electrical</h3>
+            <p>Office buildings, retail, light industrial in Metairie and along Causeway Boulevard. Panel upgrades, tenant improvement electrical, code compliance.</p>
+            <a href="/services/electrical-installation" class="service-link">
+              Learn More <i class="ph ph-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: TESTIMONIALS -->
+    <section class="section section-light reveal" aria-labelledby="reviews-heading">
+      <div class="container">
+        <p class="section-label" style="color: var(--copper);">Metairie Reviews</p>
+        <h2 id="reviews-heading">What Jefferson Parish Homeowners Say</h2>
+
+        <div class="testimonial-grid">
+
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-text">"Had aluminum wiring in my 1969 Metairie ranch that two other electricians didn't even mention. Big Easy came out, did a proper evaluation, explained exactly what CO/ALR replacement means and why it's the right fix. Very thorough."</p>
+            <p class="testimonial-author">Patricia L.</p>
+            <p class="testimonial-location">East Metairie</p>
+          </div>
+
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-text">"Our insurance company flagged our Federal Pacific panel in the home inspection. Big Easy handled the whole thing — permit, panel swap, Entergy coordination, inspection. Done in one day. The other quotes were higher and didn't include the permit fee."</p>
+            <p class="testimonial-author">Raymond K.</p>
+            <p class="testimonial-location">Old Metairie</p>
+          </div>
+
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-text">"I called them about tripping breakers in my Fat City condo. They came out fast, found a double-tapped 20-amp circuit that had been there since the original build, and explained it clearly. Fixed same visit. Honest, no upsell."</p>
+            <p class="testimonial-author">Michelle D.</p>
+            <p class="testimonial-location">Fat City, Metairie</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: FAQ -->
+    <section class="section reveal" aria-labelledby="faq-heading">
+      <div class="container" style="max-width: 800px;">
+        <p class="section-label">Questions About Metairie Service</p>
+        <h2 id="faq-heading">FAQ — Electrician in Metairie, LA</h2>
+
+        <div class="faq-list">
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Do you service Metairie, Louisiana?
+              <i class="ph ph-plus faq-icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer">
+              Yes. We serve all of Metairie and Jefferson Parish, including Old Metairie, Fat City, East Metairie, West Metairie, and Bucktown. We pull Jefferson Parish permits for every job that requires one.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              My Metairie home was built in the 1960s — do I have aluminum wiring?
+              <i class="ph ph-plus faq-icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer">
+              Possibly. Aluminum branch circuit wiring was common in Jefferson Parish residential construction from roughly 1965 to 1973, when copper prices spiked. If your home was built in that window, an evaluation is worth scheduling. We look at the wire color at the panel and at outlets to identify it definitively. The evaluation is free as part of any service call.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              What permits does Big Easy Electricians pull in Jefferson Parish?
+              <i class="ph ph-plus faq-icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer">
+              We file electrical permits through Jefferson Parish Inspection and Code Enforcement for all work that requires one — panel upgrades, service entrance changes, new circuits, and house rewiring. We handle the paperwork and coordinate the inspection sign-off before closing out the job.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Is aluminum wiring dangerous in my Metairie home?
+              <i class="ph ph-plus faq-icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer">
+              Aluminum wiring is not inherently dangerous if all the connections are tight and the devices are rated for it. The problem is that aluminum expands and contracts more than copper, which loosens connections over time. Loose connections arc. The CPSC has documented aluminum wiring as a fire risk factor in older homes. We evaluate the actual condition before recommending remediation — not every aluminum-wired home needs the same fix.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- NEARBY AREAS -->
+    <section class="section reveal" style="background: var(--navy-mid);" aria-labelledby="nearby-heading">
+      <div class="container">
+        <p class="section-label">We Also Serve</p>
+        <h2 id="nearby-heading" style="font-size: 24px;">Nearby Service Areas</h2>
+        <div class="nearby-chips">
+          <a href="/service-areas/kenner" class="nearby-chip">Kenner</a>
+          <a href="/service-areas/harahan" class="nearby-chip">Harahan</a>
+          <a href="/service-areas/river-ridge" class="nearby-chip">River Ridge</a>
+          <a href="/service-areas/gretna" class="nearby-chip">Gretna</a>
+          <a href="/service-areas/new-orleans" class="nearby-chip">New Orleans</a>
+          <a href="/service-areas/laplace" class="nearby-chip">LaPlace</a>
+          <a href="/service-areas/covington" class="nearby-chip">Covington</a>
+          <a href="/service-areas/mandeville" class="nearby-chip">Mandeville</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="svc-cta-band" aria-label="Contact Big Easy Electricians in Metairie">
+      <div class="container">
+        <h2>Need an Electrician in Metairie?</h2>
+        <p>Free written estimate. Jefferson Parish permits handled. 30 years serving Jefferson Parish homeowners.</p>
+        <div class="cta-band-row">
+          <a href="/contact" class="btn-dark">
+            Get Free Estimates — No Obligation
+            <i class="ph ph-arrow-right" aria-hidden="true"></i>
+          </a>
+          <a href="tel:+15042267555" class="btn-phone">
+            <i class="ph ph-phone" aria-hidden="true"></i>
+            Call 504-226-7555
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <img src="../assets/images/logo.png" alt="Big Easy Electricians" class="footer-logo" width="140" height="52">
+          <p class="footer-tagline">30 years rewiring New Orleans — from knob-and-tube shotgun doubles to commercial panel upgrades.</p>
+          <a href="tel:+15042267555" class="footer-phone">504-226-7555</a>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="/services/electrical-installation">Electrical Installation</a></li>
+            <li><a href="/services/electrical-maintenance">Electrical Maintenance</a></li>
+            <li><a href="/services/electrical-repairs">Electrical Repairs</a></li>
+            <li><a href="/services/house-rewiring">House Rewiring</a></li>
+            <li><a href="/services/panel-upgrade">Panel Upgrade</a></li>
+            <li><a href="/services/aluminum-wiring">Aluminum Wiring</a></li>
+            <li><a href="/services/troubleshooting">Troubleshooting</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Service Areas</h4>
+          <ul>
+            <li><a href="/service-areas/new-orleans">New Orleans</a></li>
+            <li><a href="/service-areas/metairie">Metairie</a></li>
+            <li><a href="/service-areas/kenner">Kenner</a></li>
+            <li><a href="/service-areas/gretna">Gretna</a></li>
+            <li><a href="/service-areas/covington">Covington</a></li>
+            <li><a href="/service-areas/mandeville">Mandeville</a></li>
+            <li><a href="/service-areas/slidell">Slidell</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <address style="font-style: normal;">
+            <p>New Orleans, Louisiana</p>
+            <p>Serving Orleans, Jefferson,<br>St. Tammany &amp; Tangipahoa Parishes</p>
+            <a href="tel:+15042267555" class="footer-phone" style="margin-top: 12px; display: block;">504-226-7555</a>
+            <p style="margin-top: 8px; color: var(--muted); font-size: 14px;">Mon – Fri, 9:00 AM – 6:00 PM</p>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="footer-year">2024</span> Big Easy Electricians. All rights reserved. Licensed Electrical Contractor — LSLBC.</p>
+        <nav aria-label="Footer links">
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/sitemap.xml">Sitemap</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <div class="sticky-mobile-cta" role="navigation" aria-label="Quick contact">
+    <a href="tel:+15042267555" class="sticky-cta-call">
+      <i class="ph ph-phone" aria-hidden="true"></i> Call Now
+    </a>
+    <a href="/contact" class="sticky-cta-form">Free Estimate</a>
+  </div>
+
+  <script src="../js/main.js"></script>
+  <script>
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => {
+          i.classList.remove('open');
+          i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
